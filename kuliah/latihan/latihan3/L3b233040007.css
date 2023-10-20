@@ -1,0 +1,32 @@
+*, html {
+  background-color: aqua;
+  font-family: georgia;
+}
+
+.mark {
+  color: blue;
+}
+
+.h1 {
+  font-size: 60px;
+  font-family: cursive;
+  color: darkblue;
+  text-align: center;
+}
+
+.h4 {
+  text-align: right;
+  font-style: italic;
+}
+
+.nama {
+  color: white;
+}
+
+.p1 {
+  color: rgba(230, 166, 3, 0.925);
+}
+
+.p {
+  text-align: center;
+}

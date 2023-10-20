@@ -1,0 +1,23 @@
+*, html {
+  background-color: aqua;
+  font-family: georgia;
+}
+
+.mark {
+  color: blue;
+}
+
+.h1 {
+  font-size: 60px;
+  font-family: cursive;
+  color: darkblue;
+}
+
+.h4 {
+  text-align: right;
+  font-style: italic;
+}
+
+.p {
+  text-align: justify;
+}

@@ -1,0 +1,42 @@
+*, html {
+  background-color: aqua;
+  font-family: georgia;
+}
+
+.h1 {
+  font-size: 60px;
+  font-family: cursive;
+  color: darkblue;
+  text-align: center;
+}
+
+.h4 {
+  text-align: right;
+  font-style: italic;
+}
+
+.nama {
+  color: white;
+}
+
+.nama:hover{
+  color: red;
+}
+
+.mark {
+  color: blue;
+ text-decoration: none;
+}
+
+.mark:hover {
+  color: white;
+  background-color: darkblue;
+}
+
+.p1 {
+  color: rgba(230, 166, 3, 0.925);
+}
+
+.p {
+  text-align: center;
+}

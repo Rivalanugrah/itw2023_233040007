@@ -1,0 +1,43 @@
+*,
+html {
+  font-family: georgia;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.body {
+  background-image: url(background.png);
+}
+
+.h1 {
+  font-size: 60px;
+  font-family: cursive;
+  color: darkblue;
+  text-align: center;
+}
+
+.h4 {
+  text-align: center;
+  font-style: italic;
+}
+
+.h3 {
+  text-align: center;
+}
+.nama {
+  color: red;
+}
+
+.mark {
+  text-decoration: none;
+  color: blue;
+}
+
+.p1 {
+  color: rgba(230, 166, 3, 0.925);
+}
+
+.p {
+  text-align: center;
+}
