@@ -9,42 +9,50 @@ body {
 .container {
   width: 800px;
   margin: auto;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .header {
-  padding: 20px;
+  padding: 5px;
+  background-color: rgb(17, 78, 210);
+  display: flex;
 }
 
 .header .judul {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-top: 25px;
 }
 
 .header ul li {
+  font-size: large;
   display: inline-block;
-  margin-top: 20px;
-  margin-right: 10px;
+  margin-top: 10px;
+  padding-left: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .header a {
   text-decoration: none;
-  color: salmon;
+  color: black;
   padding: 3px;
 }
 
 .header a:hover {
-  background-color: lightskyblue;
+  background-color: rgb(0, 0, 0);
   color: white;
+  border-radius: 5px;
+  transition-duration: 1s;
 }
 
 .hero {
-  height: 350px;
+  height: 450px;
   background-image: url(hero.jpg);
   background-size: cover;
-  background-position: 0 -100;
-  border-bottom: 5px solid lightskyblue;
-  border-top: 5px solid salmon;
+  background-position: 0 -60;
+  border-bottom: 5px solid rgb(0, 170, 255);
+  border-top: 5px solid rgb(0, 170, 255);
 }
 
 .content {
@@ -62,7 +70,7 @@ body {
 }
 
 .content .penulis a {
-  color: salmon;
+  color: rgb(255, 0, 0);
   text-decoration: none;
 }
 
@@ -73,12 +81,12 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 10px;
+  padding-bottom: 25px;
 }
 
 .footer .copy {
   color: #eaeaea;
   text-align: center;
   font-size: 12px;
+  height: 1px;
 }
-
