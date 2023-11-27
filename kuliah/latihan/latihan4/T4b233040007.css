@@ -1,8 +1,10 @@
 /* style */
 body {
+  margin: 0;
+  padding: 0;
   font: 16px/28px arial, sans-serif;
   background-color: #eaeaea;
-  background-image: url(webb.png);
+  background-image: url(img/jeremy-bishop-8xznAGy4HcY-unsplash.jpg);
   color: #333;
 }
 
@@ -13,30 +15,24 @@ body {
 }
 
 .header {
-  padding: 5px;
-  background-color: rgb(17, 78, 210);
+  height: 35px;
+  margin: 0;
+  background: -webkit-radial-gradient(top right, #006eff, #ff3232);
   display: flex;
 }
 
-.header .judul {
-  font-size: 20px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  margin-top: 25px;
-}
-
 .header ul li {
-  font-size: large;
+  margin: -20px;
+  font-size: 25px;
   display: inline-block;
-  margin-top: 10px;
-  padding-left: 50px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 80px;
+  font-family:fantasy;
 }
 
 .header a {
+  font-size: 20px;
   text-decoration: none;
-  color: black;
-  padding: 3px;
+  color: rgb(0, 0, 0);
 }
 
 .header a:hover {
@@ -46,13 +42,74 @@ body {
   transition-duration: 1s;
 }
 
+.nama {
+  margin: 0px;
+  padding-top: 3px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background: -webkit-radial-gradient(top right, #fc0000, rgb(255, 255, 255));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 30px;
+  
+
+}
+
+.judul {
+  padding: 30px;
+  text-align: center;
+  color: red;
+}
+
 .hero {
-  height: 450px;
-  background-image: url(hero.jpg);
+  height: 500px;
+  background-image: url(img/big.jpg);
   background-size: cover;
-  background-position: 0 -60;
-  border-bottom: 5px solid rgb(0, 170, 255);
-  border-top: 5px solid rgb(0, 170, 255);
+  background-position: 0 0;
+  border-bottom: 5px solid rgb(77, 80, 82);
+  border-top: 5px solid rgb(77, 80, 82);
+}
+
+.hero1 {
+  height: 410px;
+  width: 760px;
+  background-size: cover;
+  background-image: url(img/Hiro\ Hamanda.jpg);
+}
+
+.hero2 {
+  height: 400px;
+  width: auto;
+  background-size: cover;
+  background-image: url(img/bigmax.jpg);
+}
+
+.hero3 {
+  height: 400px;
+  width: auto;
+  background-size: cover;
+  background-image: url(img/honel\ lemon.jpg);
+}
+
+.hero4 {
+  height: 400px;
+  width: auto;
+  background-size: cover;
+  background-image: url(img/fred.jpg);
+}
+
+.hero5 {
+  height: 400px;
+  width: auto;
+  background-size: cover;
+  background-image: url(img/wasabi.jpg);
+}
+
+.hero6 {
+  height: 400px;
+  width: auto;
+  background-size: cover;
+  background-image: url(img/GoGo\ Tomago.webp);
 }
 
 .content {
