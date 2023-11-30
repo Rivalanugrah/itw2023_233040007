@@ -1,51 +1,153 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: arial, helvetica, sans-serif;
-  background-color: #ddd;
-  line-height: 1.65;
-  padding-bottom: 1000px;
+  font-family: 'Vina Sans', sans-serif;
+  overflow-x: hidden;
+  background-color: #4d68eb;
 }
 
-/* Latihan 1*/
-.container-satu {
-  width: 800px;
-  margin: 50px auto;
-  background-color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
+/* Navbar */
+
+nav {
   display: flex;
+  background-color: #232946;
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  height: 50px;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-family: sa;
+  font-size: 20px;
 }
 
-.kolom-utama {
-  flex: 3;
-  order: 2;
+nav .logo {
+  font-family: 'Ephesis', cursive;
+  font-size: 25px;
+  letter-spacing: 3px;
+  background: linear-gradient(to right,blue, rgb(132, 0, 255));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.sidebar-satu {
-  flex: 1;
-  order: 2;
-}
-
-.sidebar-dua {
-  flex: 1;
-  order: 3;
-}
-
-/*Latihan 2*/
-.container-dua {
-  width: 30%;
-  margin: 50px auto;
+nav ul {
   display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
-.Layanan.satu {
-  background-color: rgb(119, 119, 255);}
-.Layanan.dua {
-  background-color: rgb(103, 216, 103);}
-.layanan.tiga {
-  background-color: rgb(255, 124, 124);}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: .8em;
+  font-family: Arial, sans-serif;
+}
+
+nav ul li a:hover {
+  color: rgb(136, 0, 255);
+  transition: all .3s ease-in-out;
+  
+}
+
+/* Hamburger Menu */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  top: -3px;
+  left: -5px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(179, 179, 226);
+  border-radius: 3px;
+  transition: all .5s;
+}
+
+/* Hamburger Animation */
+
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+
+
+
+
+/* Responsive Breakpoint */
+
+/* Ukuran Tablet */
+
+@media screen and (max-width: 768px) {
+  nav ul {
+      width: 50%;
+  }
+}
+
+
+/* Ukuran Mobile */
+
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+      display: flex;
+  }
+
+  nav ul {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      width: 80%;
+      align-items: center;
+      justify-content: space-evenly;
+      z-index: -1;
+      flex-direction: column;
+      background-color: #232946;
+      transform: translateX(100%);
+      transition: all 1s;
+      opacity: 0;
+  }
+
+  nav ul.slide {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
