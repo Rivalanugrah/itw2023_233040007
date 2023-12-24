@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Vina Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
   background-color: #4d68eb;
 }
@@ -24,7 +24,7 @@ nav {
 }
 
 nav .logo {
-  font-family: 'Ephesis', cursive;
+  font-family: 'Pacifico', cursive;
   font-size: 25px;
   letter-spacing: 3px;
   background: linear-gradient(to right,blue, rgb(132, 0, 255));

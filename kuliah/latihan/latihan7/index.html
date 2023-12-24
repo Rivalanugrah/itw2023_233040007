@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">Lapangan Futsal</h2>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">IDR 250k</h4>
+          <p class="item">Jersey 1</p>
+        </div>
+        <div class="features feature-2">
+          <h4 class="price">IDR 250k</h4>
+          <p class="item">Jersey 2</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="brand">
+          <h1>Lapangan Futsal</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Produtc</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <section class="services">
+        <div class="service">
+         
+          <h3>Ukuran Lapangan Futsal</h3>
+          <p>
+            Ukuran lapangan futsal terbagi dua. Ada ukuran lapangan futsal nasional dan ukuran lapangan futsal Internasional. Berikut perbedaan kedua lapangan tersebut:<br>
+
+1. Lapangan futsal nasional memiliki panjang 25-43 meter dan lebar 15-25 meter.<br>
+2. Lapangan futsal internasional memiliki panjang 28-42 meter dan lebar 18-25 meter.
+          </p>
+        </div>
+
+        <div class="service">
+          
+          <h3>Garis Tanda Lapangan Futsal</h3>
+          <p>
+            1. Lapangan futsal dibagi menjadi 2 bagian yang memiliki luas yang sama. Masing-masing bagian dibatasi sebuah garis yang dinamakan “garis tengah”.<br>
+            2. Pada lapangan terdapat tanda dengan garis pembatas lapangan. Garis yang lebih panjang disebut garis samping (touch line). Sedangkan garis yang lebih pendek disebut garis gawang (goal line).<br>
+            3. Lebar garis pembatas lapangan yaitu 8 cm.<br>
+            4. Pada garis tengah terdapat titik pusat dengan jari-jari lingkaran 3 m.
+          </p>
+        </div>
+
+        <div class="service">
+         
+          <h3>Gawang Lapangan Futsal</h3>
+          <p>
+            Lebar gawang berukuran 3 m yang diukur dari bagian dalam tiang. Sedangkan tinggi gawang adalah 2 m yang diukur dari bagian dalam tiang palang atas gawang ke lantai.<br>
+
+Kedalaman tiang mempunyai ukuran 80 cm untuk bagian atas dan 100 cm untuk bagian bawah.<br>
+
+Bentuk penampang tiang harus berbentuk bundar. Hal ini akan lebih aman dan arah pantulan lebih terarah jika terjadi benturan bola. Jaring gawang terbuat dari rami, goni, atau nilon yang diikat pada tiang dan palang tiang.
+          </p>
+        </div>
+
+        <div class="service">
+
+          <h3>Daerah Pergantian Pemain</h3>
+          <p>
+            Daerah pergantian pemain berjarak 5 m setelah garis daerah bebas. Daerah ini ditandai dengan garis yang memotong garis samping. Garis ini memiliki lebar 8 cm dan panjang 80 cm. (40 cm di dalam lapangan dan 40 cm di dalam lapangan).
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2>Gallery</h2>
+
+        <img src="https://source.unsplash.com/random/201x201" alt=""/>
+        <img src="https://source.unsplash.com/random/202x202" alt="" />
+        <img src="https://source.unsplash.com/random/203x203" alt="" />
+        <img src="https://source.unsplash.com/random/204x204"alt="" />
+        <img src="https://source.unsplash.com/random/205x205" alt="" />
+        <img src="https://source.unsplash.com/random/206x206" alt="" />
+        <img src="https://source.unsplash.com/random/207x207" alt="" />
+        <img src="https://source.unsplash.com/random/208x208" alt=""/>
+        <img src="https://source.unsplash.com/random/209x209" alt="" />
+        <img src="https://source.unsplash.com/random/210x210" alt="" />
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle input');
+      const nav = document.querySelector('nav ul');
+
+      menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('slide');
+      });
+    </script>
+  </body>
+</html>
